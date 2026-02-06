@@ -12,6 +12,14 @@ This repository contains a simple single-stage pipeline register implemented in 
 ## Files
 - `pipeline_reg.sv` – RTL implementation
 - `tb_pipeline_reg.sv` – Testbench for functional verification
+- `waveform.jpg` - Verified using Vivado behavioral simulation.
+
+## Simulation
+The waveform (waveform.jpg) shows:
+- Data accepted when in_valid & in_ready
+- Backpressure handling when out_ready is low
+- Correct valid/ready handshake behavior
 
 ## Notes
 The design demonstrates basic flow-control concepts commonly used in AXI-stream and other on-chip interconnects.
+
